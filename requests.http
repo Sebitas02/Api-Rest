@@ -1,0 +1,29 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"milton tolaba",
+    "age": 21,
+    "email": "tammi05@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/662d7568215d1cbc39fc1150 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/662d77e259f078a232aee89f HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Milton Tolabas",
+    "age": 22,
+    "email": "tammi05@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/662d77e259f078a232aee89f HTTP/1.1
+
